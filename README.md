@@ -1,1 +1,1 @@
-I have been to Columbus plenty of times, and these are some of the best places to visit - especially for a family! Enjoy this small website
+I have been to Columbus plenty of times, and these are some of the best places to visit - especially for a family! Enjoy this lil website! Features a changing background and visual elements every five minutes :)

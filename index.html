@@ -9,6 +9,16 @@
    padding: 20px;
 transition: background-image 2s ease-in-out, color 2s ease-in-out; 
         }
+        .infod {
+   
+   margin: 20px auto;
+   transition: background-color 2s ease-in-out;
+   border-radius: 16px;
+   padding: 25px;
+   
+   
+   
+}
      .titles{
 
      }   
@@ -41,6 +51,7 @@ transition: background-image 2s ease-in-out, color 2s ease-in-out;
         <p>Let's find out!</p>
         <p>Scroll along the website and discover new places for your next trip here!</p>
     </div>
+    <div id = "card" class="infod">
     <div class = "stufff">
         <img src = "Franklin park friend.jpg">
         <div class = "titles">
@@ -51,8 +62,12 @@ transition: background-image 2s ease-in-out, color 2s ease-in-out;
             <p>It's like a dream park!</p>
         </div>
     </div>
+     </div>
+    <div class="infod">
      <div class = "stufff">
         
+       
+
         <div class = "titles">
         <h2>German Village</h2>
         </div>
@@ -62,6 +77,8 @@ transition: background-image 2s ease-in-out, color 2s ease-in-out;
         </div>
         <img src = "mom.webp">
     </div>
+    </div>
+    <div class="infod">
      <div class = "stufff">
         <img src = "donefriend.webp">
         <div class = "titles">
@@ -72,6 +89,8 @@ transition: background-image 2s ease-in-out, color 2s ease-in-out;
             <p>Very well organized as well.</p>
         </div>
     </div>
+    </div>
+    <div class="infod">
      <div class = "stufff">
         <div class = "titles">
         <h2>Mardi Gras</h2>
@@ -83,6 +102,8 @@ transition: background-image 2s ease-in-out, color 2s ease-in-out;
 
         <img src = "ok.jpg">
     </div>
+</div>
+    <div class="infod">
      <div class = "stufff">
         <img src = "n.jpeg">
         <div class = "titles">
@@ -93,12 +114,15 @@ transition: background-image 2s ease-in-out, color 2s ease-in-out;
             <p>It even features some historic replicas of towns that you can explore and get great photo opportunities!</p>
         </div>
     </div>
+    </div>
 </body>
 <script>
-    const sundaynight[
-{ image:'1colum.jpg', textColor: '#F88379'},
-{image: '2colum.jpg', textColor: '#000080'},
-{image : '3colum.jpeg', textColor: '#fffff'},
+    const sundaynight =[
+{image:'1colum.jpg', textColor: '#301934', boxColor: 'rgba(255, 255, 255, 0.85)' },
+{image: '2colum.jpg', textColor: '#000080', boxColor: 'rgba(240, 248, 255, 0.9)' },
+{image : '3 colum.jpeg', textColor: '#ffffff', boxColor: 'rgba(0, 0, 0, 0.75)'
+
+},
 
     ];
 
@@ -107,7 +131,16 @@ let currentIndex =  0;
 function observe(){
 const currentNow = sundaynight[currentIndex];
 document.body.style.backgroundImage = `url('${currentNow.image}')`;
+document.body.style.color = currentNow.textColor; 
+currentIndex = (currentIndex + 1) % sundaynight.length;
+const cards = document.querySelectorAll('.infod');
+cards.forEach(function(singleCard) {
+    singleCard.style.backgroundColor = currentNow.boxColor;
+});
 
 }
+observe();
+setInterval(observe, 30000);
+
 </script>
 </html>
