@@ -1,1 +1,1 @@
-# bingles
+I have been to Columbus plenty of times, and these are some of the best places to visit - especially for a family! Enjoy this small website

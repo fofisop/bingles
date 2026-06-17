@@ -1,7 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
     <style>
-        
+        body{
+             background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   margin: 0;
+   padding: 20px;
+transition: background-image 2s ease-in-out, color 2s ease-in-out; 
+        }
+     .titles{
+
+     }   
+     .reg-text{
+
+     }
+     .stufff img{
+        border-radius: 8px;
+        height: auto;
+        width: 200px;
+     }
+     .stufff{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 30px ;
+     }
     </style>
 <head>
     <meta charset="UTF-8">
@@ -10,7 +34,7 @@
 </head>
 <body>
     <div class = "titles">
-        <h1>What are some of the best things to do when visiting the capitol of Ohio?</h1>
+        <h1>What are some of the best things to do when visiting the capital of Ohio?</h1>
 
     </div>
     <div class="reg-text">
@@ -18,7 +42,7 @@
         <p>Scroll along the website and discover new places for your next trip here!</p>
     </div>
     <div class = "stufff">
-        <img src = "">
+        <img src = "Franklin park friend.jpg">
         <div class = "titles">
         <h2>Franklin park conservatory and botanical gardens</h2>
         </div>
@@ -28,7 +52,7 @@
         </div>
     </div>
      <div class = "stufff">
-        <img src = "">
+        
         <div class = "titles">
         <h2>German Village</h2>
         </div>
@@ -36,9 +60,10 @@
             <p>A small German village with shops and a spot to eat!</p>
             <p>I highly reccomend you try their cream puffs, they are the best.</p>
         </div>
+        <img src = "mom.webp">
     </div>
      <div class = "stufff">
-        <img src = "">
+        <img src = "donefriend.webp">
         <div class = "titles">
         <h2>Columbus Zoo</h2>
         </div>
@@ -48,7 +73,6 @@
         </div>
     </div>
      <div class = "stufff">
-        <img src = "">
         <div class = "titles">
         <h2>Mardi Gras</h2>
         </div>
@@ -56,9 +80,11 @@
             <p>The best ice cream I have ever had.</p>
             <p>If you are bored of vanilla and chocolate, try Mardi Gras ice cream! They have Indian flavors such as jasmine, ginger, and mango.</p>
         </div>
+
+        <img src = "ok.jpg">
     </div>
      <div class = "stufff">
-        <img src = "">
+        <img src = "n.jpeg">
         <div class = "titles">
         <h2>Cosi</h2>
         </div>
@@ -68,4 +94,20 @@
         </div>
     </div>
 </body>
+<script>
+    const sundaynight[
+{ image:'1colum.jpg', textColor: '#F88379'},
+{image: '2colum.jpg', textColor: '#000080'},
+{image : '3colum.jpeg', textColor: '#fffff'},
+
+    ];
+
+
+let currentIndex =  0;
+function observe(){
+const currentNow = sundaynight[currentIndex];
+document.body.style.backgroundImage = `url('${currentNow.image}')`;
+
+}
+</script>
 </html>
